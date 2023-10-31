@@ -1,0 +1,136 @@
+
+
+.ergonomics__title {
+  margin: 0px;
+  font-family: 'Bebas Neue';
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 38px;
+  text-align: left;
+  color: #0B64FE;
+}
+
+.ergonomics__text {
+  font-family: "Ubuntu";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 27px;
+  text-align: left;
+  color: #181818;
+}
+.ergonomics__img {
+  position: relative;
+}
+.ergonomics__img img{
+  max-height: 390px;
+}
+.ergonomic__img-up,
+.ergonomic__img-down {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.ergonomic__img-up {
+  position: relative;
+  overflow: hidden;
+  bottom: -80px;
+}
+.testUp {
+  animation-name: example;
+  animation-duration: 4s;
+  bottom: 0px;
+}
+@keyframes example {
+  from {bottom:-80px;}
+  to {bottom:0px}
+}
+
+.testDown {
+  animation-name: example;
+  animation-duration: 4s;
+  bottom: -80px;
+}
+@keyframes example {
+  from {bottom:0px;}
+  to {bottom:-80px}
+}
+
+.wrapper__button {
+  position: absolute;
+  width: 100%;
+  top: 52%;
+  display: flex;
+  justify-content: center;
+}
+
+.ergonomics__button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: #A6FFFF;
+  border-radius: 30px;
+  cursor: pointer;
+  width: 61px;
+  height: 61px;
+}
+.ergonomics__button-right_margin {
+  margin-right: 8%;
+}
+
+@media(min-width: 567px) {
+  .ergonomics__button {
+    font-family: Ubuntu;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 68px;
+    width: 120px;
+    height: 120px;
+    border-radius:120px;
+  }
+}
+
+@media(min-width: 800px) {
+  .ergonomics {
+    display: flex;
+    height: 780px;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .ergonomics__title {
+    max-width: 700px;
+    height: 260px;
+    order:2;
+    font-family: Ubuntu;
+    font-size: 62px;
+    font-weight: 300;
+    line-height: 62px;
+
+  }
+  .ergonomics__img {
+    width: 51.5%;
+    height: 780px;
+    order: 1;
+  }
+ 
+  .ergonomics__text {
+    margin: 0px;
+    max-width: 500px;
+    height: 260px;
+    order:3;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 37px;
+
+  }
+  .ergonomics__button {
+    font-family: Ubuntu;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 68px;
+    width: 200px;
+    height: 200px;
+    border-radius:100px;
+  }
+}

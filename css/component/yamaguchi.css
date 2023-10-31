@@ -1,0 +1,235 @@
+
+.yamaguchi {
+  color: white;
+}
+.yamaguchi__title {
+  font-family: "Montserrat";
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 34px;
+  text-align: left;
+}
+.yamaguchi__text {
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: left;
+
+}
+.yamaguchi__img-wrapper {
+  max-width: 290px;
+  margin: 0 auto;
+}
+.yamaguchi__img-laptop {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.yamaguchi__img-laptop img{
+  display: block;
+  margin-left: 40px;
+}
+.yamaguchi__greetings-up {
+  font-family: "Montserrat-ExtraBold";
+  font-size: 39px;
+  font-weight: 900;
+  line-height: 35px;
+  text-align: left;
+}
+.yamaguchi__greetings-middle {
+  font-family: "Montserrat-ExtraBold";
+  font-size: 61px;
+  font-weight: 900;
+  line-height: 55px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.yamaguchi__greetings-bottom {
+  font-family: "Montserrat-ExtraBold";
+  font-size: 50px;
+  font-weight: 900;
+  line-height: 45px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.yamaguchi__greetings-span {
+  font-family: "Montserrat";
+}
+
+.human__img-wrapper-4 {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 252px;
+  border-bottom-left-radius: 54px;
+  border-bottom-right-radius: 54px;
+  overflow: hidden;
+  margin: 0 auto;
+  bottom: -1px;
+  position: relative;
+}
+
+
+.human__img-wrapper-3 {
+  display: block;
+  position: relative;
+  bottom: -1px;
+  width: 300px;
+  box-sizing: border-box;
+  border-bottom-left-radius: 106px;
+  border-bottom-right-radius: 106px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.human__img-wrapper-2{
+  display: block;
+  position: relative;
+  width: 400px;
+  box-sizing: border-box;
+  border-bottom-left-radius: 177px;
+  border-bottom-right-radius: 177px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.human__img-wrapper-1 {
+  display: block;
+  position: relative;
+  width: 500px;
+  box-sizing: border-box;
+  border-bottom-left-radius: 239px;
+  border-bottom-right-radius: 239px;
+  overflow: hidden;
+  margin: 0 auto;
+  left: -100px;
+}
+.human {
+  top: 0px;
+  animation: arr 6s, levitation 6s ease 6s infinite;
+  position: relative;
+  z-index: 4;
+}
+@keyframes arr {
+  from {top:827px;}
+  to {top:51px}
+
+}
+
+@keyframes levitation {
+  from {
+    top: 0px;
+  }
+  to {
+    top: 10px;
+  }
+}
+
+
+
+
+.hole {
+  display: block;
+  position: relative;
+  width:230px;
+  height: 70px; 
+  animation: diameter-1 3s;
+}
+
+@keyframes diameter-1 {
+  from {width:0px;}
+  50% {width: 250px;}
+  to {width:230px}
+  from {height:0px;}
+  50%{height: 90px;}
+  to {height:70px}
+} 
+
+
+
+@keyframes levitation {
+  from {
+    top: 50px;
+
+  }
+  25% {
+    top: 25px;
+
+  }
+  50% {
+    top: 50px;
+  
+  }
+  75% {
+    top: 25px;
+
+  }
+  to {
+    top: 50px;
+  }
+}
+
+@media(min-width: 350px) {
+  .yamaguchi__img-background {
+    background-position-x:0px;
+  }
+}
+
+@media(min-width: 800px) {
+  .yamaguchi {
+    display: flex;
+    height: 850px;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .yamaguchi__title {
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 70px;
+    margin-top: 0px;
+    width: 40%
+  }
+  .yamaguchi__text-wrapper {
+    width: 400px;
+    height: 390px;
+    margin-bottom: 85px;
+  }
+  .yamaguchi__img-block {
+    width: 60%;
+    display: flex;
+    order: 4;
+  }
+  .yamaguchi__img-laptop img {
+    display: block;
+    margin-left: 0px;
+    object-fit: contain;
+    width: 100%;
+    margin-top: -30px;
+  }
+
+  .yamaguchi__greetings-up {
+    display: block;
+    font-size: 45px;
+    line-height: 40px;
+  }
+  .yamaguchi__greetings-middle,
+  .yamaguchi__greetings-bottom {
+    font-size: 61px;
+    font-weight: 900;
+    line-height: 55px;
+  }
+  .yamaguchi__greetings-wrapper {
+    display: block;
+  }
+  .yamaguchi__greetings {
+    width: 40%
+  }
+}
+@media(min-width: 1920px) {
+  .yamaguchi__greetings-wrapper {
+    display: block;
+    margin: 30px 0px 30px 48px;
+  }
+}
+  
